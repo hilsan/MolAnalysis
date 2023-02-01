@@ -1,0 +1,17 @@
+Date: 010223
+Author: Hilda Sandström
+Description: 
+Directory contains analysis of RS & IS datasets with simpol (https://github.com/stakahama/aprl-ssp/tree/master/SMARTSpatterns) with aromatic rings, nitrophenol and non-aromatic rings removed. 
+
+Workflow: 
+python scripts/format_dataframe_for_simpol.py
+#<<Do simpol analysis>> --write as bash script? 
+python scripts/plot_fun_groups.py
+
+Contents: 
+simpol outputs: csv files showing the fun. group freq in each molecule
+images: figures of fun. group statistcs
+datasets_set_compounds: datasets to be analysed by simpol
+scripts: 
+    plot_fun_groups.py: script for visualisation of fun. group statistics
+    format_dataframe_for_simpol.py: script for data processing pre-simpol analysis. Adds a compound column.
