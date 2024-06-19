@@ -1,2 +1,0 @@
-MassBank data set makes notebook crash when loaded. Many bad SMILES
-Need to understand why IS_data gets a column with 0 header after getting atom ratios

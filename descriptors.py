@@ -26,8 +26,7 @@ class CustomDescriptors(pd.DataFrame):
                 if(np.all(pd.notnull(x))) else np.NaN)
             self['comp_hash'] = tmp
             tmp2 = tmp.apply(pd.Series)
-            self['# heavy atoms'] = tmp2[tmp2.columns[tmp2.columns.str.contains('H')
-            is False]].sum(axis=1)
+            self['# heavy atoms'] = tmp2[tmp2.columns[tmp2.columns.str.contains('H') == False]].sum(axis=1)
             tmp2.columns = pd.MultiIndex.from_product([['Atoms'],tmp2.columns])
             self[tmp2.columns] = pd.DataFrame(tmp2)
             tmp = self['comp_hash'].apply(lambda x: get_atomic_ratios(x)
