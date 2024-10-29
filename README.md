@@ -1,6 +1,6 @@
 # A package to gather molecular representation and structural properties
 
-Version used for atmospheric compound similarity analysis published here:  10.5281/zenodo.14007835 
+Version of this project used for atmospheric compound similarity analysis published here:  DOI:10.5281/zenodo.14007835. 
 This project contains functions to create molecular fingerprints, atomic ratios and molecular size from RDKit for datasets of SMILES strings. 
 
 # SCRIPTS:
